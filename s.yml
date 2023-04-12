@@ -1,9 +1,9 @@
 edition: 1.0.0          
 name: Waline
-access: default
+access: aliyun-access-key
 
 vars:
-  region: cn-beijing
+  region: cn-shenzhen
   service:
     name: Waline
     description: 'A Simple, Safe Comment System inspired by Valine'
@@ -22,7 +22,7 @@ services:
         name: ${vars.service.name}
         description: ${vars.service.description}
         runtime: nodejs14
-        ossBucket: waline
+        ossBucket: terwer-waline
         codeUri: ./
         handler: index.handler
         memorySize: 256
